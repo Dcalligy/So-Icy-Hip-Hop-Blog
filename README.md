@@ -1,3 +1,12 @@
+# So Icy Hip-Hop Blog 
+Things I need to add....
+ - Links to stories, accolades, etc.
+ - Add more to the navigation bar.
+ - Add social media icons for easy following access for users.
+ - Find more stories to add to the page.
+ - Contact use page... all that noise
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
