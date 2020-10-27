@@ -14,18 +14,19 @@ import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import Pagination from '@material-ui/lab/Pagination';
-import gucci from './guccigucci.jpg';
-import wu from './wu.jpg';
-import kn from './kobe-nippsey.jpg';
-import pc from './pimp.jpg';
-import uwu from './rei.jpg';
-import misato from './misato.jpeg';
-import ld from './young-LD.png';
-import akarin from './akari.jpg';
+import gucci from './images/guccigucci.jpg';
+import wu from './images/wu.jpg';
+import kn from './images/kobe-nippsey.jpg';
+import pc from './images/pimp.jpg';
+import uwu from './images/rei.jpg';
+import misato from './images/misato.jpeg';
+import ld from './images/young-LD.png';
+import akarin from './images/akari.jpg';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: "grey"
+    backgroundColor: "#000"
+    
   },
   hero: {
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.50)), 
@@ -37,12 +38,12 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "end",
     color: "#f44336",
     fontSize: "4em",
     [theme.breakpoints.down("sm")]: {
-      height: "auto",
-      fontSize: "4em"
+      height: "flex",
+      fontSize: "2em"
     }
   },
   blogsContainer: {
@@ -79,19 +80,21 @@ function App() {
     <div className="App">
       <AppBar className={classes.appBar} position="static">
         <Toolbar>
-          <Typography variant="h6" color="red" >
+          <Typography variant="h7" color="primary">
             So Icy Blog Entertainment!
           </Typography>
         </Toolbar>
       </AppBar>
+
       <Box className={classes.hero}>
         <Box>Hip Hop Blogspot</Box>
       </Box>
+      
       <Container maxWidth="lg" className={classes.blogsContainer}>
         <Typography variant="h3" className={classes.blogTitle}>
           Articles
         </Typography>
-        
+
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={4}>
             <Card className={classes.card}>
@@ -111,6 +114,7 @@ function App() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
+
               <CardActions className={classes.cardActions}>
                 <Box className={classes.author}>
                   <Avatar src={misato} />
@@ -147,6 +151,7 @@ function App() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
+
               <CardActions className={classes.cardActions}>
                 <Box className={classes.author}>
                   <Avatar src={uwu}/>
@@ -185,6 +190,7 @@ function App() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
+
               <CardActions className={classes.cardActions}>
                 <Box className={classes.author}>
                   <Avatar src={akarin} />
@@ -223,6 +229,7 @@ function App() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
+
               <CardActions className={classes.cardActions}>
                 <Box className={classes.author}>
                   <Avatar src={ld} />
@@ -250,4 +257,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
