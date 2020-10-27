@@ -19,13 +19,17 @@ import wu from './wu.jpg';
 import kn from './kobe-nippsey.jpg';
 import pc from './pimp.jpg';
 import uwu from './rei.jpg';
+import misato from './misato.jpeg';
+import ld from './young-LD.png';
+import akarin from './akari.jpg';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: "grey"
   },
   hero: {
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.50)), url('https://images.unsplash.com/photo-1575426220089-9e2ef7b0c9f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')`,
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.50)), 
+    url('https://images.unsplash.com/photo-1575426220089-9e2ef7b0c9f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')`,
     height: "700px",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -109,10 +113,10 @@ function App() {
               </CardActionArea>
               <CardActions className={classes.cardActions}>
                 <Box className={classes.author}>
-                  <Avatar src={uwu} />
+                  <Avatar src={misato} />
                   <Box ml={2}>
                     <Typography variant="subtitle2" component="p">
-                      Hamburglar
+                      Misato
                     </Typography>
                     <Typography variant="subtitle2" color="textSecondary" component="p">
                       March 22, 2020
@@ -148,7 +152,7 @@ function App() {
                   <Avatar src={uwu}/>
                   <Box ml={2}>
                     <Typography variant="subtitle2" component="p">
-                      Hamburglar
+                      Rei
                     </Typography>
                     <Typography variant="subtitle2" color="textSecondary" component="p">
                       March 03, 2020
@@ -175,16 +179,18 @@ function App() {
                     Mamba Mentality
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
-                  “We psyche ourselves up too much. Like if you try to talk yourself into, ‘Oh, this is a big moment, this is a big shot,’ you’re putting a lot of pressure on yourself. You shot that shot hundreds and thousands of times. Just shoot another one.” 
+                  “We psyche ourselves up too much. Like if you try to talk yourself into, ‘Oh, this is a big moment,
+                   this is a big shot,’ you’re putting a lot of pressure on yourself. 
+                   You shot that shot hundreds and thousands of times. Just shoot another one.” 
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions className={classes.cardActions}>
                 <Box className={classes.author}>
-                  <Avatar src={uwu} />
+                  <Avatar src={akarin} />
                   <Box ml={2}>
                     <Typography variant="subtitle2" component="p">
-                      Hamburglar
+                      Akarin
                     </Typography>
                     <Typography variant="subtitle2" color="textSecondary" component="p">
                       April 14, 2020
@@ -219,10 +225,10 @@ function App() {
               </CardActionArea>
               <CardActions className={classes.cardActions}>
                 <Box className={classes.author}>
-                  <Avatar src={uwu} />
+                  <Avatar src={ld} />
                   <Box ml={2}>
                     <Typography variant="subtitle2" component="p">
-                      Hamburglar
+                      Young LD
                     </Typography>
                     <Typography variant="subtitle2" color="textSecondary" component="p">
                       Oct 26, 2020
@@ -244,5 +250,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
