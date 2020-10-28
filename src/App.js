@@ -25,8 +25,7 @@ import akarin from './images/akari.jpg';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: "#000"
-    
+    backgroundColor: "#AAA"    
   },
   hero: {
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.50)), 
@@ -80,7 +79,7 @@ function App() {
     <div className="App">
       <AppBar className={classes.appBar} position="static">
         <Toolbar>
-          <Typography variant="h7" color="primary">
+          <Typography variant="h6" color="primary">
             So Icy Blog Entertainment!
           </Typography>
         </Toolbar>
